@@ -33,6 +33,7 @@ Partial Class FrmPrincipal
         Me.lbRegtotal = New System.Windows.Forms.Label()
         Me.lbInfo = New System.Windows.Forms.Label()
         Me.chProdutos = New System.Windows.Forms.CheckBox()
+        Me.chCodBarras = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.grpOpcoes.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -52,6 +53,7 @@ Partial Class FrmPrincipal
         '
         'grpOpcoes
         '
+        Me.grpOpcoes.Controls.Add(Me.chCodBarras)
         Me.grpOpcoes.Controls.Add(Me.chProdutos)
         Me.grpOpcoes.Dock = System.Windows.Forms.DockStyle.Top
         Me.grpOpcoes.Location = New System.Drawing.Point(0, 0)
@@ -149,6 +151,16 @@ Partial Class FrmPrincipal
         Me.chProdutos.Text = "Produtos"
         Me.chProdutos.UseVisualStyleBackColor = True
         '
+        'chCodBarras
+        '
+        Me.chCodBarras.AutoSize = True
+        Me.chCodBarras.Location = New System.Drawing.Point(88, 29)
+        Me.chCodBarras.Name = "chCodBarras"
+        Me.chCodBarras.Size = New System.Drawing.Size(81, 17)
+        Me.chCodBarras.TabIndex = 1
+        Me.chCodBarras.Text = "Cod. Barras"
+        Me.chCodBarras.UseVisualStyleBackColor = True
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -175,5 +187,6 @@ Partial Class FrmPrincipal
     Friend WithEvents btSair As System.Windows.Forms.Button
     Friend WithEvents grpOpcoes As System.Windows.Forms.GroupBox
     Friend WithEvents chProdutos As System.Windows.Forms.CheckBox
+    Friend WithEvents chCodBarras As System.Windows.Forms.CheckBox
 
 End Class
